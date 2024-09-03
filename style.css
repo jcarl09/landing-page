@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background:white;
+   
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 9%;
+    background: rgba(255, 255, 255, 0.41);
+    backdrop-filter: blur(40px);
+    border-bottom: 1px solid rgba(255, 252, 252, 0.242);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    color: rgb(26, 24, 24);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    display: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+
+
+
+.home{
+    display: flex;
+    gap: 5rem;
+    
+}
+
+.home-content h1{
+    font-size: 3.2rem;
+    margin-top: 100px;
+}
+
+.home-content h3{
+    font-size: 2.2rem;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home-content h6 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.button-8 {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  margin-left: 50px;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin-top: 30px;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.button-8:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-8:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%vh;
+    height: 100%vh;
+}
+
+.images img{
+    margin-top:  -80px;
+    margin-left: 50px;
+}
+
+
+.about{
+    display: flex;
+    gap: 10rem;
+    
+}
+
+.about .about-content h1{
+    font-size: 5rem;
+    margin-top: 5px;
+
+    
+}
+
+.about .about-content .about-text {
+    background-color: rgb(118, 206, 206);
+    height: 300px;
+    width: 300px;
+    margin-top: 15px;
+    border: 15px;   
+    border-radius: 15px;
+}
+
+.about .about-text h3 {
+    font-size: 2rem;
+    margin: auto;
+    
+}
+
+.about .about-img img{
+    width: 80vh;
+    height: 80vh;
+    margin-left: 20px;
+}
+
+.contacts-content h1{
+    font-size:  5rem;
+    margin-left: 43rem;
+}
+
+
+
+
+
+.contacts form{
+    max-width: 70%;
+    margin: 1rem auto;
+    text-align: center;
+    margin-top: 5rem;
+    background-color: rgb(154, 216, 216);
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+ form .input-box input,
+ form textarea{
+    width: 50%;
+    padding: .9rem;
+    font-size: 15px;
+    color: #8d2a2a;
+    background: #e4e3f0d8;
+    border-radius: 15px;
+    margin: 8px 0;
+    border: .1rem solid #0c213d34;
+    
+}
+
+form textarea{
+    margin-left: 160px;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 2%;
+    background: rgb(154, 216, 216);
+    color: black;
+    
+}
+
+.footer-icontop{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 20px;
+    background: rgb(154, 216, 216);
+    border-radius: 50px;
+    transition: .5 ease;
+}
+
+.footer-icontop a:hover{
+    box-shadow: 0 0 4px #d1d6dfa2;
+}
+
+.footer-icontop a i{
+    color: #d1d6df;
+    font-size: 25px;
+}
+
+.footer-text p{
+    font-size: 2.1rem;
+    margin-left: 45rem;
+}
